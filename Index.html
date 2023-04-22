@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encuesta ITCA USS</title>
+</head>
+<body>
+    <nav>
+        <ul class="navigation-ul">
+            <li class="navigation-li">
+                <a href="/">
+                    Encuesta ITCA USS
+                </a>
+            </li>
+            <li class="navigation-li">
+                <a href="/p2.html">
+                    Tarjetas Responsive
+                </a>
+            </li>
+            <li class="navigation-li">
+                <a href="/p3.html">
+                    PalíndroChecker
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="encuesta">
+        <h1 id="titulo">Encuesta ITCA USS</h1>
+        <p id="descripcion">4to Trimestre</p>
+        <form id="formulario" action="">
+            <div>
+                <ul>
+                    <li>
+                        <label class="enunciado" for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre...">
+                    </li>
+                    <li>
+                        <label class="enunciado" for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Ingrese su Email..." required>
+                        <span>Formato correcto: ejemplo@ejemplo.com</span>
+                    </li>
+                    <li>
+                        <label class="enunciado" for="edad">Edad</label>
+                        <input type="number" min="18" name="edad" id="number" placeholder="Ingrese su edad (debe ser mayor de edad)..." required>
+                        <span>Para responder la encuesta debe ser mayor de 18 años</span>
+                    </li>
+                    <li>
+                        <legend>¿Recomendaría la carrera ITCA USS a algún amigo?</legend>
+                        <div class="opcion-compuesta">
+                            <input type="radio" name="recomendacion" id="recomendacion-definitivamente" value="Definitivamente" required>
+                            <label for="recomendacion-definitivamente">Definitivamente</label>
+                        </div>
+                        <div class="opcion-compuesta">
+                            <input type="radio" name="recomendacion" id="recomendacion-posiblemente" value="Posiblemente">
+                            <label for="recomendacion-posiblemente">Posiblemente</label>
+                        </div>
+                        <div class="opcion-compuesta">
+                            <input type="radio" name="recomendacion" id="recomendacion-no-estoy-seguro" value="No estoy seguro">
+                            <label for="recomendacion-no-estoy-seguro">No estoy seguro</label>
+                        </div>
+                    </li>
+                    <li>
+                        <legend>¿Cuál ha sido su asignatura favorita de la carrera?</legend>
+                        <select name="asignatura" id="asignatura" required>
+                            <option id="select-placeholder" value="" disabled selected hidden>Seleccione una opción</option>
+                            <option id="respuesta-asignatura" value="Cálculo Diferencial e Integral">Cálculo Diferencial e Integral</option>
+                            <option id="respuesta-asignatura" value="Álgebra Lineal">Álgebra Lineal</option>
+                            <option id="respuesta-asignatura" value="Probabilidades para Ingeniería">Probabilidades para Ingeniería</option>
+                            <option id="respuesta-asignatura" value="Programación I">Programación I</option>
+                            <option id="respuesta-asignatura" value="Programación II">Programación II</option>
+                            <option id="respuesta-asignatura" value="Análisis Orientado a Objetos">Análisis Orientado a Objetos</option>
+                            <option id="respuesta-asignatura" value="Estadística para ingeniería">Estadística para ingeniería</option>
+                            <option id="respuesta-asignatura" value="Base de Datos">Base de Datos</option>
+                            <option id="respuesta-asignatura" value="Redes I">Redes I</option>
+                            <option id="respuesta-asignatura" value="Redes II">Redes II</option>
+                            <option id="respuesta-asignatura" value="Taller de Sistemas Operativos I">Taller de Sistemas Operativos I</option>
+                            <option id="respuesta-asignatura" value="Desarrollo Web">Desarrollo Web</option>
+                        </select>
+                    </li>
+                    <li>
+                        <legend>¿Qué mejoras le gustaría que se implementaran?</legend>
+                        <div class="opcion-compuesta">
+                            <input type="checkbox" name="mejora" id="bootcamps-de-desarrollo">
+                            <label for="bootcamps-de-desarrollo">Bootcamps de desarrollo</label>
+                        </div>
+                        <div class="opcion-compuesta">
+                            <input type="checkbox" name="mejora" id="talleres-de-innovacion">
+                            <label for="talleres-de-innovacion">Talleres de Innovación</label>
+                        </div>
+                        <div class="opcion-compuesta">
+                            <input type="checkbox" name="mejora" id="ingenieria-de-sw-aplicada">
+                            <label for="ingenieria-de-sw-aplicada">Ingeniería de SW Aplicada</label>
+                        </div>
+                        <div class="opcion-compuesta">
+                            <input type="checkbox" name="mejora" id="otra-mejora">
+                            <label for=otra-mejora">Otra mejora</label>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="enunciado" for="mas-comentarios">Ingrese cualquier otro comentario o sugerencia</label>
+                        <textarea name="mas-comentarios" id="mas-comentarios" cols="30" rows="10" placeholder="Agregue su comentario acá..."></textarea>
+                    </li>
+                    <li>
+                        <input type="submit" class="submit-button" value="Enviar encuesta">
+                    </li>
+                </ul>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

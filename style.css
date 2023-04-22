@@ -1,0 +1,200 @@
+*{
+    vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+    text-decoration: none;
+    color: #e0e1dd;
+    list-style-type: none;
+}
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #778da9;
+}
+nav{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #415a77;
+
+}
+.navigation-ul{
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+}
+.navigation-li{
+    display: flex;
+    justify-content: center;
+}
+a:hover{
+    color:white;
+}
+.encuesta{
+    width: 50%;
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0d1b2a;
+    border-radius: 25px;
+}
+#titulo{
+    font-size: 36px;
+}
+#descripcion{
+    font-size: 25px;
+}
+#formulario{
+    margin-top: 20px;
+}
+#formulario li{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+#formulario li .enunciado{
+    font-size: 20px;
+    margin: 10px 0px;
+}
+#formulario li legend{
+    font-size: 18px;
+    margin: 5px;
+}
+#formulario li input{
+    border-radius: 5px;
+    color: black;
+    height: 25px;
+    padding-left: 10px;
+}
+#formulario li span{
+    display: none;
+}
+/*#formulario li input: focus: invalid, #formulario li span{
+    display: inline;
+}*/
+select{
+    border-radius: 5px;
+    color: black;
+    height: 25px;
+}
+option{
+    color:black;
+}
+.opcion-compuesta{
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+.opcion-compuesta label{
+    margin-left: 5px;
+}
+textarea{
+    resize: none;
+    height: 90px;
+    color:#0d1b2a;
+    padding: 15px;
+}
+.submit-button{
+    margin: 12px 0px;
+    cursor: pointer;
+    background-color: #06d6a0;
+}
+
+/*FIN ESTILOS PREGUNTA 1 y general*/
+
+/* ESTILOS PREGUNTA 2 */
+.card-container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    align-items: start;
+}
+@media (min-width: 700px){
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+}
+.card{
+    width: 200px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    box-shadow: 4px 4px 4px black;
+    border-radius: 3px;
+}
+img{
+    width: 200px;
+}
+.card-title{
+    color: black;
+    margin: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.card-description{
+    margin: 0px 15px;
+    color: black;
+}
+.card-button{
+    margin: 15px 15px;
+    background-color: grey;
+    padding: 8px 25px;
+    width: 170px;
+    cursor: pointer;
+}
+
+/*FIN ESTILOS PREGUNTA 2*/
+/*INICIO ESTILOS PREGUNTA 3 */
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+#pal-form{
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    align-items: center;
+}
+#pal-label{
+    color: black;
+    font-weight: bold;
+}
+#pal-entry{
+    color: black;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px black;
+    border: black solid 1px;
+}
+#goButton{
+    color: black;
+    width: 80px;
+    border-radius: 20px;
+    border: black solid 1px;
+    box-shadow: 1px 1px 1px black;
+}
+#textReturn{
+    background-color: white;
+    padding: 15px;
+    border-radius: 25px;
+}

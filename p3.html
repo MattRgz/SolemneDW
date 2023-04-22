@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PalíndroChecker</title>
+</head>
+<body>
+    <nav>
+        <ul class="navigation-ul">
+            <li class="navigation-li">
+                <a href="/">
+                    Encuesta ITCA USS
+                </a>
+            </li>
+            <li class="navigation-li">
+                <a href="/p2.html">
+                    Tarjetas Responsive
+                </a>
+            </li>
+            <li class="navigation-li">
+                <a href="/p3.html">
+                    PalíndroChecker
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="content">
+        <form method="get" action="" id="pal-form" onsubmit="event.preventDefault()">
+            <label for="pal-entry" id="pal-label">Ingrese una palabra a continuación:</label>
+            <input type="text" name="pal-entry" id="pal-entry">
+            <button id="goButton" onclick="checkPalindromo()">Go!</button>
+        </form>
+        <h3 id="textReturn"></h3>
+    </div>
+    <script src="palindromo.js"></script>
+</body>
+</html>
